@@ -1,8 +1,10 @@
 
-
+<h2>this is index html</h2>
 <% @creatures.each do |creature| %>
 <p>
   <strong><%= creature.name %></strong>
   <strong><%= creature.description %></strong>
+  <%= link_to "show", creature_path(creature) %>
 </p>
 <% end %>
+<%= link_to "create", new_creature_path %>

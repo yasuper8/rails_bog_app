@@ -1,3 +1,6 @@
+<h2>this is creatures/show html</h2>
 <h3><%= @creature.name %></h3>
 <p><%= @creature.description %></p>
+<%= link_to "Edit", edit_creature_path %>
 <%= button_to "Delete", @creature, method: :delete %>
+<%= link_to "home", creatures_path %>

@@ -18,7 +18,7 @@ class CreaturesController < ApplicationController
   # create a new creature in the database
   def create
     #whitelist params and save them to a variable
-    creature_params = params.require(:creature).permit(:name, :description)
+    # creature_params = params.require(:creature).permit(:name, :description)
 
     #create a new creature from "creature_params"
     creature = Creature.new(creature_params)
